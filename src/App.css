@@ -1,0 +1,9 @@
+.content{
+    width: 100vw;
+    height: auto;
+}
+
+.content:nth-child(1){
+    position: sticky;
+    top: 0;
+}

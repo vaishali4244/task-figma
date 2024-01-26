@@ -1,15 +1,12 @@
-.content{
-    width: 100vw;
-    height: 100vh;
-    background: var(--Purple-3, #F7F5F9);
-    font-size: 1.2em;
-
+.content {
+  width: 100vw;
+  height: 100vh;
+  background: var(--Purple-3, #f7f5f9);
+  font-size: 1.2em;
 }
 
-@media screen and (max-width:900px){
-   .content{
-     height:auto;
-   }
+@media screen and (max-width: 900px) {
+  .content {
+    height: auto;
+  }
 }
-
-

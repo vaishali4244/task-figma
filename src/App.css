@@ -1,9 +1,15 @@
 .content{
     width: 100vw;
-    height: auto;
+    height: 100vh;
+    background: var(--Purple-3, #F7F5F9);
+    font-size: 1.2em;
+
 }
 
-.content:nth-child(1){
-    position: sticky;
-    top: 0;
+@media screen and (max-width:900px){
+   .content{
+     height:auto;
+   }
 }
+
+

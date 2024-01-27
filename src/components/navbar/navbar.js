@@ -4,8 +4,7 @@ const Navbar = () => {
     return (
         <div className="nav-container">
 
-            <img className="nav-logo" src={require("../assets/HobbyCue Logo.png")} alt="" />
-
+            <img className="nav-logo" src={require("../../assets/HobbyCue Logo.png")} alt="" />
             <div className="nav-searchBox">
                 <input className='nav-input' placeholder='Search here...' />
                 <div className="nav-searchIcon">

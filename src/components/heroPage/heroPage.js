@@ -269,9 +269,9 @@ const HeroPage = () => {
                     <h2 className='grey'>Sign In</h2>
                     <h2>Join In</h2>
                 </div>
-                <div className='hero-btn'> <img src={require("../assets/Google.png")} alt="" />
+                <div className='hero-btn'> <img src={require("../../assets/Google.png")} alt="" />
                     <p>Continue with Google</p></div>
-                <div className='hero-btn'><img src={require("../assets/Facebook.png")} alt="" />
+                <div className='hero-btn'><img src={require("../../assets/Facebook.png")} alt="" />
                     <p>Continue with Facebook</p></div>
                 <div className="connect">
                     <div className="line" />

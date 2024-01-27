@@ -1,22 +1,22 @@
 .hero-container {
-  height: 66vh;
-  width: 98vw;
+  box-sizing: border-box;
+  height: 74vh;
+  width: 98.5vw;
   display: flex;
   flex-direction: row;
-  word-wrap: no-wrap;
+  background: var(--Purple-3, #f7f5f9);
 }
 
 .hero-intro {
-  height: 5.65vh;
-  width: 50vw;
-  /* flex-shrink: 1; */
-  margin: 10vh 5vw;
+  height: auto;
+  width: 53vw;
+  flex-shrink: 1;
+  margin: 0vh 6.5vw;
 }
 
 .hero-intro h1 {
   color: var(--Black, #000);
-
-  font-size: 48px;
+  font-size: 40px;
   font-style: italic;
   font-weight: 600;
   line-height: normal;
@@ -27,21 +27,19 @@
 .hero-intro h1 .hobby {
   color: var(--Blue1, #0096c8);
 }
+
 .hero-intro h1 .passion {
   color: var(--Primary-Full, #8064a2);
 }
 
 .hero-intro p {
   color: var(--Base-Black, var(--Black, #000));
-
-  /* Text sm/Light */
-
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 30px; /* 214.286% */
+  line-height: 30px;
   letter-spacing: 0.28px;
-  margin-top: 0.5vh;
+  margin-top: 0.3vh;
 }
 
 .hero-image {
@@ -57,23 +55,23 @@
 
 .hero-signin {
   box-sizing: border-box;
-  width: 41vw;
+  width: 29vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 10vh 1.5vw;
+  margin-right: 2.5vw;
 }
 
 .hero-signin .sign-join {
   display: flex;
   justify-content: space-between;
-  width: 16.3vw;
+  width: 16vw;
   color: #939ca3;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 
 .sign-join:hover {
@@ -86,15 +84,15 @@
 
 .hero-btn {
   display: flex;
-  height: 2.4vh;
-  width: 68%;
-  padding: 12px 8.2vw 12px 24px;
+  height: 2vh;
+  width: 20vw;
+  padding: 10px 3.6vw 10px 20px;
   align-items: center;
-  gap: 8.4vw;
+  gap: 5.4vw;
   border-radius: 8px;
   border: 1px solid var(--Primary-Full, #8064a2);
   background: var(--Purple-3, #f7f5f9);
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 
 .hero-btn img {
@@ -106,7 +104,6 @@
 }
 .hero-btn p {
   color: var(--Grey-Darkest, #08090a);
-
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -119,30 +116,31 @@
 }
 
 .hero-signin .connect {
-  width: 96.3%;
+  width: 83.3%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 
 .hero-signin .connect .line {
   background: var(--Grey-Light, #ced4da);
   height: 2px;
-  width: 12.5vw;
+  width: 8vw;
 }
 
 .hero-signin .connect p {
   color: var(--Base-Black, var(--Black, #000));
-
-  font-size: 12px;
+  font-size: 0.8em;
   font-style: normal;
   font-weight: 600;
   line-height: 16px;
 }
 
 .hero-signin input {
-  padding: 12px 115px 12px 12px;
+  padding: 10px 3.6vw 10px 20px;
+  height: 2vh;
+  width: 20vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,9 +148,7 @@
   border-radius: 8px;
   border: 1px solid var(--Grey-Lighter, #ebedf0);
   background: var(--Grey-white, #fff);
-  height: 2.4vh;
-  width: 68%;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 
 .hero-pw {
@@ -160,8 +156,13 @@
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  width: 98%;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
+}
+.hero-pw input {
+  border-radius: 8px;
+  padding: 10px 3.6vw 10px 20px;
+  height: 2vh;
+  width: 20vw;
 }
 
 .hero-pw svg {
@@ -174,7 +175,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 25vw;
 }
 
 .hero-forgot-pw:hover {
@@ -184,7 +185,7 @@
 .hero-forgot-pw .checkbox {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 40%;
 }
 
@@ -202,56 +203,62 @@
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
-  width: 30vw;
+  width: 100%;
 }
 
 .hero-forgot-pw .forget {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 40%;
 }
 
 .hero-forgot-pw .forget p {
   color: var(--Base-Black, var(--Black, #000));
-
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; /* 133.333% */
+  line-height: 16px;
 }
 
 .hero-continue {
+  width: 25vw;
+  height: 5vh;
   display: flex;
-  padding: 12px 172px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 110px;
   border-radius: 8px;
   border: 1px solid var(--Base-Black, #000);
-  width: 98%;
   color: var(--Base-Black, var(--Black, #000));
   font-size: 14px;
   font-weight: 600;
-  line-height: 16px; /* 114.286% */
-  padding: 12px 8.2vw 12px 24px;
+  line-height: 16px;
+  padding: 12px 02vw 12px 24px;
 }
 
-@media screen and (min-width: 360px) and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .hero-container {
+    box-sizing: content-box;
     height: auto;
-    width: 98vw;
+    width: 98.5vw;
     flex-direction: column;
+    padding-bottom: 18vh;
   }
   .hero-intro {
     height: auto;
     width: 90vw;
-    flex-shrink: 1;
-    margin: 1vh 5vw;
+    margin: 2vh 5vw;
   }
+
   .hero-intro h1 {
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 2.3rem;
+    font-weight: 400;
+    letter-spacing: 0px;
+  }
+
+  .hero-intro p {
+    font-size: 1em;
   }
 
   .hero-image {
@@ -260,70 +267,68 @@
 
   .hero-signin {
     width: 80vw;
-    background: var(--Purple-3, #f7f5f9);
+    justify-content: center;
+    margin: 2vh auto;
   }
+
+  .hero-signin svg {
+    display: none;
+  }
+  .hero-signin img {
+    display: none;
+  }
+
   .hero-signin .sign-join {
-    width: 90vw;
+    width: 50vw;
     justify-content: space-evenly;
   }
 
   .hero-image-2 {
     display: flex;
     width: 85vw;
-    height: auto;
+    height: 20vh;
     background: var(--Purple-3, #f7f5f9);
-    margin-top: 0;
+    margin: 2vh 5vw;
   }
-  .hero-continue {
-    width: 90%;
-  }
-  .hero-signin input {
-    padding: 12px 55px 12px 12px;
+
+  .hero-btn {
     display: flex;
+    height: 2.5vh;
+    width: 75vw;
+    padding: 10px 2vw 10px 2vw;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 8px;
-    border: 1px solid var(--Grey-Lighter, #ebedf0);
-    background: var(--Grey-white, #fff);
-    height: 2.4vh;
-    width: 68%;
     margin-bottom: 2vh;
   }
-}
 
-@media screen and (max-width: 360px) {
-  .hero-container {
-    height: auto;
-    width: 98vw;
-    flex-direction: column;
-  }
-  .hero-intro {
-    height: auto;
-    width: 95vw;
-    flex-shrink: 1;
-    margin: 1vh 5vw;
-  }
-  .hero-intro h1 {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-  .hero-intro p span,
-  .hero-image {
-    display: none;
+  .hero-continue {
+    width: 80vw;
   }
 
-  .hero-signin {
-    width: 90vw;
-  }
-  .hero-signin .sign-join {
-    width: 90vw;
-    justify-content: space-around;
+  .hero-btn p {
+    font-size: 1em;
   }
 
-  .hero-image-2 {
-    display: flex;
-    width: 90vw;
-    height: auto;
+  .hero-signin input {
+    padding: 12px 20px 12px 12px;
+    height: 2.4vh;
+    width: 74vw;
+    margin-bottom: 2vh;
+    font-size: 1em;
+  }
+  .hero-signin .connect {
+    width: 79vw;
+  }
+  .hero-signin .connect .line {
+    width: 25vw;
+  }
+  .hero-forgot-pw {
+    width: 80vw;
+  }
+  .hero-forgot-pw .forget {
+    justify-content: flex-end;
+  }
+  .forget svg {
+    display: block;
+    margin-right: 2vw;
   }
 }

@@ -1,5 +1,5 @@
 .nav-container {
-  width: 100vw;
+  width:98.5vw;
   background: var(--Grey-white, #fff);
   box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.08);
   display: flex;
@@ -78,8 +78,6 @@
   flex-shrink: 1;
   color: var(--Base-Black, var(--Black, #000));
   margin-right: 2vw;
-  /* Text sm/Medium */
-
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -99,13 +97,10 @@
 }
 
 .hobbies p {
-  color: var(--Base-Black, var(--Black, #000));
-  /* Text sm/Medium */
-
-  font-size: 0.875rem;
+  color: var(--Base-Black, var(--Black, #000));font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 2.15%; /* 157.143% */
+  line-height: 2.15%;
 }
 .nav-icons .icon {
   margin-right: 2vw;
@@ -118,7 +113,7 @@
 }
 
 .nav-signin {
-  width: 7.8vw;
+  width: 7em;
   height: 4vh;
   flex-shrink: 0.5;
   border-radius: 8px;
@@ -154,12 +149,9 @@
     height: 1em;
     flex-shrink: 0;
   }
-  .nav-signin {
-    width: 5em;
-  }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 385px) {
   .nav-searchBox,
   .nav-icons {
     display: none;

@@ -1,0 +1,19 @@
+.footer-container {
+  width: 98.5vw;
+  height: 7.5vh;
+  flex-shrink: 0;
+  background: var(--Purple-3, #f7f5f9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container p {
+  color: var(--Grey-Darkest, #08090a);
+  
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.07px;
+}

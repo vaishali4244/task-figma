@@ -4,10 +4,10 @@ import Screen from './screens/screen';
 
 function App() {
   return (
-   
-     <Routes>
-           <Route path="/" element={<Screen/>} />
-        </Routes>
+
+    <Routes>
+      <Route path="/" element={<Screen />} />
+    </Routes>
 
   );
 }
